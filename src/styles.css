@@ -1,0 +1,91 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+}
+
+.buttonNav button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buttonNav button:hover {
+  background-color: #0056b3;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.employeeListName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-right: 2px solid black;
+  margin: 0;
+  padding: 0;
+}
+.employeeListName.active {
+  background-color: lightblue;
+}
+button {
+  height: 30%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: #01070d;
+}
+
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 11;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+.buttonModal {
+  height: 10%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: #01070d;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  height: 10%;
+}
